@@ -1,0 +1,8 @@
+@import "../mixins";
+
+
+.bottom {
+    background: $bgBottom;
+    min-height: $bottomHeight;
+    z-index: 5;
+}

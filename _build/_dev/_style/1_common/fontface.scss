@@ -1,0 +1,15 @@
+@import "../mixins";
+
+
+
+@font-face {
+    font-family: 'Kurale-Regular';
+    src:
+        url('font/Kurale-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Kurale-Regular.woff') format('woff'),
+        url('font/Kurale-Regular.ttf')  format('truetype'),
+        url('font/Kurale-Regular.svg#Kurale-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
