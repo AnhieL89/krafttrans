@@ -1,0 +1,29 @@
+- var offerList = {"1":"team", "2":"strategy", "3":"business process", "4":"principles"}
+.offer__box
+    .offer__head
+        | Мы усовершенствовали собственные методы работы и готовы предложить рынку грузоперевозки 2.0.
+    .offer__body
+        h2.offer__title
+            .offer__anim
+                span.offer__txt_b
+                    | МЕЖДУНАРОДНЫЕ 
+                span.offer__txt_th
+                    | перевозки 
+                span.offer__txt_b
+                    | 2.0 
+        ul.offer__list
+            each val, index in offerList
+                li.offer__item
+                    span.offer__txt=val
+    .offer__foot
+        | – это качественно новый способ доставить 
+        | Ваш груз из точки А в Б, 
+        | используя 20 летний опыт и новейшие системы контроля, 
+        | оптимизации и обработки информации. 
+
+
+
+
+
+
+

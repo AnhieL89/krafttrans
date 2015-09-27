@@ -1,0 +1,42 @@
+extends ../1_layout/layout
+
+block title
+    | title here
+
+
+
+block content
+    section.page__line.content.offer.arrowdown
+        a.nav__anchor(name="offer")
+        .wrapper
+            include ../3_blocks/1_offer.jade
+
+    section.page__line.content.principle
+        a.nav__anchor(name="principle")
+        .wrapper
+            include ../3_blocks/2_principle.jade
+
+    section.page__line.content.office
+        a.nav__anchor(name="office")
+        .wrapper
+            include ../3_blocks/3_office.jade
+
+    section.page__line.content.process
+        a.nav__anchor(name="process")
+        .wrapper
+            include ../3_blocks/4_process.jade
+
+    section.page__line.content.slider
+        a.nav__anchor(name="slider")
+        .wrapper
+            include ../3_blocks/5_slider.jade
+
+    section.page__line.content.feedback
+        a.nav__anchor(name="feedback")
+        .wrapper
+            include ../3_blocks/6_feedback.jade
+
+
+
+
+

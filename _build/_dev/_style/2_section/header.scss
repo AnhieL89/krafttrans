@@ -1,0 +1,159 @@
+@import "../mixins";
+
+
+.header {
+    height: $headerHeight;
+    z-index: 5;
+    .wrapper {
+        height: 100%;
+    }
+}
+
+
+// PARALAX
+.paralax {
+    background-image: url('img/bg-header_paralax.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+
+// RIBON
+.ribon {
+    background-image: url(img/ribon.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-top: -160px;
+    height: 320px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    z-index: 10;
+    @extend .animated;
+    @extend .fadeInLeft;
+    @include animation_delay(1s);
+    @include animation_duration(1s);
+}
+
+
+// LOGO
+.logo {
+//    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+svg.src {
+    position: absolute;
+    padding-top: 0%;
+    height: 0;
+    margin: 0;
+}
+.logo__svg {
+    position: absolute;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 45px;
+}
+.logo__img {
+    
+}
+.logo__dscr {
+    font-family: $font_1;
+    font-size: 15px;
+    border: solid 1px #1a1a1a;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    &:hover {
+        color: darken($accent, 10);
+        border-color: darken($accent, 10);
+    }
+//    @extend .animated;
+//    @extend .pulse;
+//    @include animation_delay(1.5s);
+//    @include animation_duration(.5s);
+//    @include animation_iteration(3);
+}
+
+
+
+// TABLE
+.table {
+    display: table;
+}
+.header_table {
+    height: 100%;
+    width: 100%;
+}
+.td {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+// UTP
+.utp__title_accent,
+.utp__dscrpt {
+    @extend .animated;
+    @include animation_delay(.5s);
+    @include animation_duration(1s);
+}
+.utp {
+    color: #000;
+    width: 780px;
+}
+.utp__title {
+    font-family: $font_1;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 1;
+}
+.utp__title_accent {
+    font-family: $font_3;
+    font-weight: 700;
+    color: $accent;
+    @extend .fadeInDown;
+}
+.utp__dscrpt {
+    display: block;
+    font-family: $font_4;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    @extend .fadeInUp;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
