@@ -1,27 +1,36 @@
 $bgTop: #555;
-$bgNav: #ffd700;
-$bgHeader: #333;
-$bgFooter: #ddd;
+$bgNav: rgba(0, 0, 0, 0.6);
+$bgHeader: #80FF72;
 $bgMain: #5aff6d;
-$bgBottom: #111;
+$bgBottom: #333434;
+$bgFooter: #1c1d1d;
+
 
 $topHeight: 50px;
-$navHeight: 50px;
-$headerHeight: 100px;
+$navHeight: 100%;
+$headerHeight: 100%;
 $mainHeight: 400px;
-$footerHeight: 100px;
-$bottomHeight: 30px;
+$footerHeight: 170px;
+$bottomHeight: 110px;
 
 
-$accent: #e83c3c;
+$accent: #ec2227;
 $socond: #25ba25;
 $service: #0000ff;
 
-$g_font: Arial, sans-serif;
-$s_font: Arial, sans-serif;
-$t_font: Arial, sans-serif;
+
+// Helvetica New
+$font_1: helveticaneuecyrlight, sans-serif;
+$font_2: helveticaneuecyrroman, sans-serif;
+$font_3: helveticaneuecyrbold, sans-serif;
+// Myriad Pro
+$font_4: myriadprolight, sans-serif;
+$font_5: myriadregular, sans-serif;
+// ICONS
+$iconfont: svgfont_1regular;
 
 
+$breakpoint: 1000px;
 
 
 //@include animation_iteration(infinite)
@@ -38,7 +47,7 @@ $t_font: Arial, sans-serif;
     animation-delay: $delay;
 }
 
-//@include animation_delay(3s)
+//@include animation_duration(3s)
 @mixin animation_duration($durat) {
     -webkit-animation-duration: $durat;
     animation-duration: $durat;

@@ -1,15 +1,92 @@
 @import "../mixins";
 
 
-
 @font-face {
-    font-family: 'Kurale-Regular';
-    src:
-        url('font/Kurale-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/Kurale-Regular.woff') format('woff'),
-        url('font/Kurale-Regular.ttf')  format('truetype'),
-        url('font/Kurale-Regular.svg#Kurale-Regular') format('svg');
+    font-family: 'helveticaneuecyrroman';
+    src: url('font/helveticaneuecyr-roman-wf.eot');
+    src: url('font/helveticaneuecyr-roman-wf.eot?#iefix') format('embedded-opentype'),
+         url('font/helveticaneuecyr-roman-wf.woff') format('woff'),
+         url('font/helveticaneuecyr-roman-wf.ttf') format('truetype'),
+         url('font/helveticaneuecyr-roman-wf.svg#helveticaneuecyrroman') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'helveticaneuecyrbold';
+    src: url('font/helveticaneuecyr-bold-wf.eot');
+    src: url('font/helveticaneuecyr-bold-wf.eot?#iefix') format('embedded-opentype'),
+         url('font/helveticaneuecyr-bold-wf.woff') format('woff'),
+         url('font/helveticaneuecyr-bold-wf.ttf') format('truetype'),
+         url('font/helveticaneuecyr-bold-wf.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src: url('font/helveticaneuecyr-light-wf.eot');
+    src: url('font/helveticaneuecyr-light-wf.eot?#iefix') format('embedded-opentype'),
+         url('font/helveticaneuecyr-light-wf.woff') format('woff'),
+         url('font/helveticaneuecyr-light-wf.ttf') format('truetype'),
+         url('font/helveticaneuecyr-light-wf.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// -------------------------------------------------------------------------------
+// url('font/myriadpro-regular.otf')  format('opentype'),
+// url('font/myriadpro-light.otf')  format('opentype'),
+@font-face {
+    font-family: 'myriadprolight';
+    src: url('font/myriadpro-light.eot?#iefix') format('embedded-opentype'),
+         url('font/myriadpro-light.woff') format('woff'),
+         url('font/myriadpro-light.ttf')  format('truetype'),
+         url('font/myriadpro-light.svg#MyriadPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myriadregular';
+    src: url('font/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+         url('font/myriadpro-regular.woff') format('woff'),
+         url('font/myriadpro-regular.ttf')  format('truetype'),
+         url('font/myriadpro-regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+// ICON FONT
+@font-face {
+    font-family: 'svgfont_1regular';
+    src: url('font/krafttrans_font_bottom.eot');
+    src: url('font/krafttrans_font_bottom.eot?#iefix') format('embedded-opentype'),
+         url('font/krafttrans_font_bottom.woff2') format('woff2'),
+         url('font/krafttrans_font_bottom.woff') format('woff'),
+         url('font/krafttrans_font_bottom.ttf') format('truetype'),
+         url('font/krafttrans_font_bottom.svg#svgfont_1regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

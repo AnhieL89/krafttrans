@@ -1,0 +1,88 @@
+@import "../mixins";
+
+
+
+.offer {
+    min-height: 266px;
+    background-color: $accent;
+    background-image: url('img/offer_pattern.png');
+    background-repeat: no-repeat;
+    background-position: center -70px;
+    background-size: auto;
+    color: #fff;
+    z-index: 1;
+}
+.offer.arrowdown:before {
+    border-top-color: $accent;
+}
+.offer__box {
+    width: 730px;
+    display: inline-block;
+    text-align: left;
+}
+.offer__head {
+    
+}
+.offer__body {
+//    display: none;
+    position: relative;
+    padding: 20px 0;
+    @include clearfix;
+}
+.offer__foot {
+    font-size: 18px;
+}
+
+
+
+.offer__title {
+    position: relative;
+    font-size: 28px;
+    font-family: $font_2;
+    font-weight: normal;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    float: left;
+    width: 550px;
+    line-height: 2.5;
+    overflow: hidden;
+}
+.offer__anim {
+    @extend .animated;
+    @extend .fadeInRight;
+    @include animation_delay(1s);
+    @include animation_duration(2s);
+}
+.offer__list {
+    float: right;
+    width: 180px;
+    padding-left: 30px;
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+}
+.offer__item {
+    line-height: 1;
+    @extend .animated;
+    @extend .fadeInRight;
+}
+.offer__item:nth-child(2n) {
+    @include animation_delay(.3s);
+}
+.offer__item:nth-child(3n) {
+    @include animation_delay(.6s);
+}
+.offer__item:nth-child(4n) {
+    @include animation_delay(.9s);
+}
+.offer__txt {
+    
+}
+.offer__txt_b {
+    font-weight: bold;
+}
+.offer__txt_th {
+    
+}
+
+
+
+

@@ -19,7 +19,7 @@ var require,
     spritesmith = require('gulp.spritesmith'),
     runSequence = require('run-sequence'),
     wiredep = require('wiredep').stream,
-    prodPath = "app";
+    prodPath = "app-krafttrans";
 
 
 // CONFIG / CONFIG / CONFIG / CONFIG / CONFIG / CONFIG / CONFIG / CONFIG / CONFIG /
@@ -137,14 +137,14 @@ gulp.task("fonts", function () {
 //        .pipe(notify("fonts"))
         .on("error", log);
 });
-gulp.task("svg", function () {
-    "use strict";
-    return gulp.src(path.dev.svg + "*.*")
-        .pipe(gulp.dest(path.app.svg))
-        .pipe(browserSync.reload({stream: true}))
-//        .pipe(notify("svg"))
-        .on("error", log);
-});
+//gulp.task("svg", function () {
+//    "use strict";
+//    return gulp.src(path.dev.svg + "*.*")
+//        .pipe(gulp.dest(path.app.svg))
+//        .pipe(browserSync.reload({stream: true}))
+////        .pipe(notify("svg"))
+//        .on("error", log);
+//});
 
 
 // MOCKUP & Dependencies  ------------------------------------------------------------------------
@@ -248,7 +248,7 @@ gulp.task("mockup-watcher", function (cb) {
 gulp.task("build", function (cb) {
     "use strict";
     runSequence("c",
-                "sprt", "img", "favicon", "movie", "fonts", "svg",
+                "sprt", "img", "favicon", "movie", "fonts",
                 "css",
                 "js",
                 "cleanMockup", "jade", "bower",
@@ -268,7 +268,7 @@ gulp.task("watch", function () {
     gulp.watch([path.wch.fvc],  ["favicon"]);
     gulp.watch([path.wch.mov],  ["movie"]);
     gulp.watch([path.wch.fnt],  ["fonts"]);
-    gulp.watch([path.wch.svg],  ["svg"]);
+//    gulp.watch([path.wch.svg],  ["svg"]);
 });
 gulp.task("default", ["build", "watch"]);
 

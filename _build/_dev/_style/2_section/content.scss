@@ -1,11 +1,56 @@
 @import "../mixins";
 
-
-.main {
-    background: $bgMain;
-    min-height: $mainHeight;
-    z-index: 1;
+.content {
+    min-height: 200px;
+    padding: 50px 0;
 }
+
+
+$arrowDown: 20px;
+.arrowdown {
+    &:before {
+        content: '';
+        display: block;
+        margin-left: -1*$arrowDown;
+        height: 0;
+        width: 0;
+        position: absolute;
+        left: 50%;
+        bottom: -2*$arrowDown;
+        z-index: 10;
+        border-style: solid;
+        border-color: transparent;
+        border-width: $arrowDown;
+    }
+}
+// use border-top-color: currentColor; in current block
+// example: .currentblock.arrowdown:before{...}
+
+.title {
+}
+.title__head {
+    font-family: $font_2;
+    font-weight: normal;
+    font-size: 30px;
+}
+.title__body {
+    font-family: $font_5;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

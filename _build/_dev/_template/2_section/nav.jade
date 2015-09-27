@@ -1,1 +1,20 @@
-.wrapper
+- var navList = {"1":"header", "2":"offer", "3":"principle", "4":"office", "5":"process", "6":"slider", "7":"feedback",  "8":"footer"}
+
+ul.nav__list
+    each val, item in navList
+        li.nav__item
+            //a.nav__link(href="javascript:void("+ val +");")
+            a.nav__link(href="#"+val)
+                span.nav__txt=item
+
+
+
+
+
+
+
+
+
+
+
+
