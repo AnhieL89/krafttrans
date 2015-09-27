@@ -1,0 +1,25 @@
+@import "../mixins";
+
+
+.bottom {
+    background: $bgBottom;
+    min-height: $bottomHeight;
+    z-index: 5;
+}
+
+
+.bottom__list {
+    text-align: center;
+}
+.bottom__item {
+    display: inline-block;
+    width: 8%;
+}
+.bottom__txt {
+    color: #777;
+    font-size: 4em;
+    line-height: $bottomHeight;
+    font-family: $iconfont;
+}
+
+
