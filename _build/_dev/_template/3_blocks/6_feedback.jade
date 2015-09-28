@@ -1,0 +1,39 @@
+.feedback__head
+    .title
+        h2.title__head
+            | ПОЗДРАВТЕ НАС ПОЖАЛУЙСТА! 
+            | НАМ БУДЕТ ОЧЕНЬ ПРИЯТНО!
+
+form.form.feedback__body#feedback_id
+    .form__row
+        label.form__title(for="message")
+            | Поздравление
+        textarea.form__area#message(rows="6")
+
+    .form__row
+        label.form__title(for="name")
+            | ФИО
+        input.form__field#name()
+
+    .form__row
+        label.form__title(for="company")
+            | Компания
+        input.form__field#company()
+
+    .form__row
+        label.form__title(for="email")
+            | Почта
+        input.form__field#email()
+
+    .form__row
+        input.form__check#check(type="checkbox" checked)
+        label.form__title.form__title_ch(for="check")
+            | Можно публиковать Ваш отзыв в открытых источниках?
+        i.check__icon
+
+    .form__row
+        button.form__button
+            | Отправить
+
+
+
