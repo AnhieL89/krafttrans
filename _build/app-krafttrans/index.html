@@ -97,7 +97,7 @@
       <!-- CONTENT (6 lines)-->
       <section class="page__line content offer arrowdown"><a name="offer" class="nav__anchor"></a>
         <div class="wrapper">
-          <div class="offer__box">
+          <div id="offer__id" class="offer__box">
             <div class="offer__head">Мы усовершенствовали собственные методы работы и готовы предложить рынку грузоперевозки 2.0.</div>
             <div class="offer__body">
               <h2 class="offer__title">
@@ -127,7 +127,7 @@
               <div class="title__body">Наши принципы - основа, на которой мы строим нашу компанию.</div>
             </div>
           </div>
-          <div class="principle__body">
+          <div id="principle_id" class="principle__body">
             <ul class="content__list">
               <li class="content__item">
                 <h3 class="principle__title">Принципы работы с Клиентами</h3>
@@ -162,13 +162,13 @@
           <!-- SVG src paths-->
           <svg id="svg-offices" width="0" height="0" viewbox="0 0 1000 1000" class="src">
             <defs id="defs1">
-              <circle id="circle-minsk" cx="527.22205" cy="504.63165" r="36.69693" style="fill:#eb232a" class="circle"></circle>
-              <circle id="circle-brest" cx="399.20288" cy="578.05457" r="11.647053" style="fill:#818285" class="circle"></circle>
-              <circle id="circle-vilnus" cx="414.03778" cy="434.67496" r="16.573742" style="fill:#414142" class="circle"></circle>
-              <circle id="circle-smolensk" cx="705.83691" cy="451.18344" r="14.175718" style="fill:#414142" class="circle"></circle>
-              <circle id="circle-moskau" cx="879.17365" cy="391.84692" r="26.68502" style="fill:#414142" class="circle"></circle>
-              <circle id="circle-riga" cx="392.26169" cy="314.40546" r="12.779592" style="fill:#818285" class="circle"></circle>
-              <circle id="circle-vena" cx="137.81192" cy="839.15173" r="12.511535" style="fill:#414142" class="circle"></circle>
+              <circle id="circle-minsk" r="36" style="fill:#eb232a" class="circle"></circle>
+              <circle id="circle-brest" r="11" style="fill:#818285" class="circle"></circle>
+              <circle id="circle-vilnus" r="16" style="fill:#414142" class="circle"></circle>
+              <circle id="circle-smolensk" r="14" style="fill:#414142" class="circle"></circle>
+              <circle id="circle-moskau" r="26" style="fill:#414142" class="circle"></circle>
+              <circle id="circle-riga" r="12" style="fill:#818285" class="circle"></circle>
+              <circle id="circle-vena" r="12" style="fill:#414142" class="circle"></circle>
               <g id="g2">
                 <path id="path1" d="M 137.67664,839.91775 516.30036,517.42498" style="stroke:#aaaaaa;stroke-width:3px" class="path"></path>
                 <path id="path2" d="M 519.05308,497.25188 416.07919,438.13123" style="stroke:#aaaaaa;stroke-width:3px" class="path"></path>
@@ -190,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="office__body">
+          <div id="office_id" class="office__body">
             <div class="office__item office__item_point">
               <div class="office__point minsk"></div>
               <div class="office__point brest"></div>
@@ -216,7 +216,62 @@
         <div class="wrapper"></div>
       </section>
       <section class="page__line content slider"><a name="slider" class="nav__anchor"></a>
-        <div class="wrapper"></div>
+        <div class="slider__container">
+          <!-- z = -1-->
+          <input type="radio" name="slider" id="radio_id_1" checked class="slider__radio">
+          <input type="radio" name="slider" id="radio_id_2" class="slider__radio">
+          <input type="radio" name="slider" id="radio_id_3" class="slider__radio">
+          <!-- z = 3-->
+          <div class="slider__captiion caption bg_gradient_tobottom">
+            <div class="caption__item caption__item_1">
+              <div class="caption__utp">
+                <div class="caption__head">
+                  Мы нацелены на результат. 
+                  Стремимся повышать эффективность, предлагаем клиентам 
+                  профессионализм и качественный сервис! 
+                </div>
+                <div class="caption__body">
+                  У нас есть цели, они ограничены сроками и имеют четкие 
+                  параметры. В рамках коммерческой организации все измеримо, 
+                  результат – понятная и очевидная вещь. 
+                  Поэтому мы хотим на вопрос «Сделано?», всегда отвечать 
+                  гордо «Да!».
+                </div>
+              </div>
+            </div>
+            <div class="caption__item caption__item_2">
+              <div class="caption__utp">
+                <div class="caption__head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit incidunt, voluptas obcaecati laboriosam ipsa numquam. </div>
+                <div class="caption__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aut delectus soluta corporis, fuga itaque officiis eum cupiditate sit, quia atque omnis voluptate modi ipsum eligendi, deleniti, blanditiis. Et accusantium debitis quisquam ad?</div>
+              </div>
+            </div>
+            <div class="caption__item caption__item_3">
+              <div class="caption__utp">
+                <div class="caption__head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolorem veniam, ipsam ad sed fuga autem provident.</div>
+                <div class="caption__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A provident quos consectetur voluptates sunt vero, aspernatur veniam maiores. Veritatis maiores reprehenderit minus atque, adipisci nam eum natus!</div>
+              </div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <!-- z = 1-->
+          <div class="slider__list">
+            <div class="slider__item slider__item_1"></div>
+            <div class="slider__item slider__item_2"></div>
+            <div class="slider__item slider__item_3"></div>
+          </div>
+          <!-- z = 4-->
+          <div class="slide__toggle toggle">
+            <label for="radio_id_1" class="toggle__item toggle__item_1"><i class="arrow"></i></label>
+            <label for="radio_id_2" class="toggle__item toggle__item_2"><i class="arrow"></i></label>
+            <label for="radio_id_3" class="toggle__item toggle__item_3"><i class="arrow"></i></label>
+          </div>
+          <!-- z = 5-->
+          <div class="slide__controls controls">
+            <label for="radio_id_1" class="controls__item controls__item_1"></label>
+            <label for="radio_id_2" class="controls__item controls__item_2"></label>
+            <label for="radio_id_3" class="controls__item controls__item_3"></label>
+          </div>
+        </div>
       </section>
       <section class="page__line content feedback"><a name="feedback" class="nav__anchor"></a>
         <div class="wrapper"></div>
