@@ -4,16 +4,77 @@
 
 
 .process {
-    background-color: #222;
-    min-height: 400px;
+    background-color: #eee;
+    min-height: 200px;
+    text-align: center;
+    .wrapper {
+        text-align: center;
+    }
 }
 
 
 
 
 
+.process__head {
+    position: relative;
+    .offer.arrowdown:before {
+        border-top-color: #333;
+    }
+    .title {
+        color: #fff;
+        text-align: center;
+        background-color: #333;
+        padding: 10px;
+    }
+}
+.process__body {
+    padding-top: 30px;
+    .cover {
+        display: inline-block;
+        width: 800px;
+        height: 390px;
+        background-image: url("img/kpi.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .txt {
+        position: absolute;
+        font-family: $font_3;
+        font-size: 22px;
+        width: 350px;
+        z-index: 5;
+        @extend .animated;
+        @include animation_delay(.5s);
+        @include animation_duration(1s);
+    }
+}
+
+.one {
+    left: 10%;
+    top: 25%;
+    @extend .fadeInRight;
+}
+.two {
+    left: 61%;
+    top: 9%;
+    @extend .fadeInLeft;
+}
+.three {
+    left: 60%;
+    top: 65%;
+    @extend .fadeInLeft;
+}
 
 
 
+.process__foot {
+//    background-image: url("img/brace.png"), url("img/brace.png");
+//    background-repeat: no-repeat;
+//    background-position: 0 0, 100% 0;
+    padding: 20px 0 0 0;
+    @extend .animated;
+    @extend .fadeInUp;
+}
 
 

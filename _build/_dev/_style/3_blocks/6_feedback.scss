@@ -2,19 +2,100 @@
 
 
 
-
-
-
-
-
 .feedback {
-    background-color: #ddd;
-    min-height: 600px;
+    background-color: #f4f4f4;
+    min-height: 100%;
+    padding-bottom: 1 * ($footerHeight + $bottomHeight + 50px);
+    margin-bottom: -1 * ($footerHeight + $bottomHeight);
+    color: #333;
+}
+.feedback__head {
+    .title {
+        text-align: left;
+        display: inline-block;
+        width: 560px;
+    }
+}
+.feedback__body {
+    border-top: solid 1px #555;
+    margin-top: 30px;
+    text-align: left;
 }
 
 
+.form {
+    display: inline-block;
+    width: 560px;
+    min-height: 200px;
+}
+.form__row {
+    position: relative;
+    padding-top: 30px;
+}
+.form__title {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: $font_4;
+    display: block;
+}
+.form__area,
+.form__field,
+.form__button {
+    font-size: 18px;
+}
 
-
+.form__area,
+.form__field {
+    color: #555;
+    width: 100%;
+    padding: 3px 5px;
+    line-height: 1.6;
+    border: solid 1px #fff;
+    &:focus {
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0, .2);
+    }
+}
+.form__area {}
+.form__field {}
+.form__check {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+.check__icon {
+    background-image: url('img/check.png');
+    background-repeat: no-repeat;
+    background-position: -30px 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+}
+.form__check:checked ~ .check__icon{
+    background-position: 0 0;
+}
+.form__title_ch {
+    display: inline-block;
+    padding-left: 40px;
+    padding-bottom: 3px;
+}
+.form__button {
+    font-family: $font_4;
+    background: $accent;
+    border: solid 2px #f4f4f4;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 10px 25px 8px 25px;
+    &:focus,
+    &:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0, .4);
+    }
+}
 
 
 
