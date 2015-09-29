@@ -48,6 +48,13 @@
     overflow: hidden;
 }
 .offer__anim {
+    min-height: 150px;
+  margin: 0 10px 0 0;
+    line-height: 150px;
+    background-image: url('img/tochki.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     @extend .animated;
     @extend .fadeInRight;
     @include animation_delay(1s);
@@ -58,9 +65,11 @@
     width: 180px;
     padding-left: 30px;
     border-left: solid 1px rgba(255, 255, 255, 0.5);
+    margin: 40px 0;
 }
 .offer__item {
-    line-height: 1;
+    line-height: 20px;
+    font-size: 18px;
     @extend .animated;
     @extend .fadeInRight;
 }
