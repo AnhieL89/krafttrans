@@ -54,13 +54,32 @@
     transform-origin: 50% 50%;
 }
 
+
+.point,
 .office__point {
+    text-align: left;
     position: absolute;
-    display: block;
+    display: inline-block;
+}
+.office__point {
     @include radius(50%);
-    background-color: #333;
-    width: 10px;
-    height: 10px;
+}
+.point__name {
+    font-family: $font_3;
+    color: #555;
+}
+.point__city {
+    font-family: $font_2;
+    font-size: .8em;
+    color: #aaa;
+}
+
+
+
+
+.point_minsk {
+    left: 55%;
+    top: 56%;
 }
 .minsk {
     left: 47%;
@@ -70,6 +89,12 @@
     background-color: #eb232a;
     animation: zoommy 1s .3s;
 }
+
+
+.point_brest {
+    left: 29%;
+    top: 55%;
+}
 .brest {
     left: 38%;
     top: 56%;
@@ -77,6 +102,12 @@
     height: 10px;
     background-color: #818285;
     animation: zoommy 1s 1.3s;
+}
+
+
+.point_vilnus {
+    left: 24%;
+    top: 37%;
 }
 .vilnus {
     left: 40%;
@@ -86,13 +117,25 @@
     background-color: #414142;
     animation: zoommy 1s 1.3s;
 }
+
+
+.point_smolensk {
+    left: 64%;
+    top: 34%;
+}
 .smolensk {
-    left: 69%;
+    left: 68.5%;
     top: 43%;
     width: 15px;
     height: 15px;
     background-color: #414142;
     animation: zoommy 1s 1.3s;
+}
+
+
+.point_moskau {
+    left: 86%;
+    top: 44%;
 }
 .moskau {
     left: 85%;
@@ -102,6 +145,12 @@
     background-color: #414142;
     animation: zoommy 1s 2.3s;
 }
+
+
+.point_riga {
+    left: 41%;
+    top: 29%;
+}
 .riga {
     left: 37%;
     top: 30%;
@@ -109,6 +158,12 @@
     height: 12px;
     background-color: #818285;
     animation: zoommy 1s 2.3s;
+}
+
+
+.point_vena {
+    left: 5%;
+    top: 77%;
 }
 .vena {
     left: 13%;
@@ -118,6 +173,7 @@
     background-color: #414142;
     animation: zoommy 1s 3.3s;
 }
+
 
 
 @-webkit-keyframes zoommy {

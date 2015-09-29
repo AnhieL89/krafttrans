@@ -40,8 +40,8 @@
 
 
 // LOGO
-.logo {
-//    background-color: rgba(255, 255, 255, 0.8);
+.logo {}
+.logo_header {
     min-height: 100px;
     width: 100%;
     position: absolute;
@@ -49,22 +49,20 @@
     left: 0;
     z-index: 5;
 }
+.logo__svg_header {
+    fill: $accent;
+    position: absolute;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    top: 45px;
+    left: 5px;
+}
 svg.src {
     position: absolute;
     padding-top: 0%;
     height: 0;
     margin: 0;
-}
-.logo__svg {
-    position: absolute;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-    left: 0;
-    top: 45px;
-}
-.logo__img {
-    
 }
 .logo__dscr {
     font-family: $font_1;
@@ -80,11 +78,6 @@ svg.src {
         color: darken($accent, 10);
         border-color: darken($accent, 10);
     }
-//    @extend .animated;
-//    @extend .pulse;
-//    @include animation_delay(1.5s);
-//    @include animation_duration(.5s);
-//    @include animation_iteration(3);
 }
 
 
