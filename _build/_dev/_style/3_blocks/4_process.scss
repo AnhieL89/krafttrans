@@ -5,11 +5,42 @@
 
 .process {
     background-color: #eee;
-    min-height: 200px;
     text-align: center;
+    padding: 0 0 20px 0;
+    min-height: 575px;
     .wrapper {
         text-align: center;
     }
+    .title {
+      @extend .animated;
+      @extend .fadeIn;
+      @include animation_delay(0);
+      @include animation_duration(1s);
+    }
+    .title__head {
+        line-height: 60px;
+        padding: 5px 0;
+        &:before {
+            content: "";
+            display: block;
+            border-top: 16px solid #1c1d1d;
+            border-right: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-left: 16px solid transparent;
+            position: absolute;
+            bottom: -32px;
+            left: 50%;
+            margin: 0 -16px;
+        }
+
+    }
+  .cover {
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(1s);
+    @include animation_duration(1s);
+  }
+
 }
 
 
@@ -19,12 +50,12 @@
 .process__head {
     position: relative;
     .offer.arrowdown:before {
-        border-top-color: #333;
+        border-top-color: #1c1d1d;
     }
     .title {
         color: #fff;
         text-align: center;
-        background-color: #333;
+        background-color: #1c1d1d;
         padding: 10px;
     }
 }
@@ -45,7 +76,6 @@
         width: 350px;
         z-index: 5;
         @extend .animated;
-        @include animation_delay(.5s);
         @include animation_duration(1s);
     }
 }
@@ -54,16 +84,19 @@
     left: 10%;
     top: 25%;
     @extend .fadeInRight;
+  @include animation_delay(1.5s);
 }
 .two {
     left: 61%;
     top: 9%;
     @extend .fadeInLeft;
+  @include animation_delay(1.75s);
 }
 .three {
     left: 60%;
     top: 65%;
     @extend .fadeInLeft;
+  @include animation_delay(2s);
 }
 
 
@@ -74,6 +107,7 @@
 //    background-position: 0 0, 100% 0;
     padding: 20px 0 0 0;
     @extend .animated;
+    @include animation_delay(1.5s);
     @extend .fadeInUp;
 }
 

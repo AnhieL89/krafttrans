@@ -20,5 +20,6 @@ var jQuery,
             });
         });
     });
+
     console.log("paralax.js");
 }(jQuery));

@@ -5,7 +5,8 @@ var jQuery,
 
     var offer = $('#offer__id'),
         principle = $('#principle_id'),
-        office = $('#office_id');
+        office = $('#office_id'),
+        process = $('#process_id');
     
     
     
@@ -25,7 +26,7 @@ var jQuery,
         handler: function(direction) {
             principle.css('display','none');
             setTimeout(function(){
-                principle.css('display','inline-block');
+                principle.css('display','block');
             },10);
         },
         offset: '80%'
@@ -41,7 +42,17 @@ var jQuery,
         },
         offset: '80%'
     });
-    
+
+    var waypoint_process = new Waypoint({
+        element: document.getElementById('process_id'),
+        handler: function(direction) {
+            process.css('display','none');
+            setTimeout(function(){
+                process.css('display','block');
+            },10);
+        },
+        offset: '80%'
+    });
     
         console.log("scrolltoid.js");
 }(jQuery));

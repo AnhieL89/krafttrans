@@ -42,6 +42,10 @@
 }
 .office__item_path {
     z-index: 1;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(4s);
+    @include animation_duration(.5s);
 }
 
 #circle-minsk,
@@ -74,54 +78,82 @@
     color: #aaa;
 }
 
-
-
-
 .point_minsk {
     left: 55%;
     top: 56%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(.5s);
+    @include animation_duration(.5s);
 }
+
 .minsk {
     left: 47%;
     top: 46%;
     width: 40px;
     height: 40px;
     background-color: #eb232a;
-    animation: zoommy 1s .3s;
+//  animation: zoommy 1s .3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(.5s);
+    @include animation_duration(.5s);
 }
 
 
 .point_brest {
     left: 29%;
     top: 55%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(1s);
+    @include animation_duration(.5s);
 }
+
 .brest {
     left: 38%;
     top: 56%;
     width: 10px;
     height: 10px;
     background-color: #818285;
-    animation: zoommy 1s 1.3s;
+//  animation: zoommy 1s 1.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(1s);
+    @include animation_duration(.5s);
 }
 
 
 .point_vilnus {
     left: 24%;
     top: 37%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(1.5s);
+    @include animation_duration(.5s);
 }
+
 .vilnus {
     left: 40%;
     top: 42%;
     width: 15px;
     height: 15px;
     background-color: #414142;
-    animation: zoommy 1s 1.3s;
+//  animation: zoommy 1s 1.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(1.5s);
+    @include animation_duration(.5s);
 }
 
 
 .point_smolensk {
     left: 64%;
     top: 34%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(2s);
+    @include animation_duration(.5s);
 }
 .smolensk {
     left: 68.5%;
@@ -129,13 +161,21 @@
     width: 15px;
     height: 15px;
     background-color: #414142;
-    animation: zoommy 1s 1.3s;
+//  animation: zoommy 1s 1.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(2s);
+    @include animation_duration(.5s);
 }
 
 
 .point_moskau {
     left: 86%;
     top: 44%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(2.5s);
+    @include animation_duration(.5s);
 }
 .moskau {
     left: 85%;
@@ -143,13 +183,21 @@
     width: 25px;
     height: 25px;
     background-color: #414142;
-    animation: zoommy 1s 2.3s;
+//  animation: zoommy 1s 2.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(2.5s);
+    @include animation_duration(.5s);
 }
 
 
 .point_riga {
     left: 41%;
     top: 29%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(3s);
+    @include animation_duration(.5s);
 }
 .riga {
     left: 37%;
@@ -157,13 +205,21 @@
     width: 12px;
     height: 12px;
     background-color: #818285;
-    animation: zoommy 1s 2.3s;
+//  animation: zoommy 1s 2.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(3s);
+    @include animation_duration(.5s);
 }
 
 
 .point_vena {
     left: 5%;
     top: 77%;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(3.5s);
+    @include animation_duration(.5s);
 }
 .vena {
     left: 13%;
@@ -171,7 +227,11 @@
     width: 12px;
     height: 12px;
     background-color: #414142;
-    animation: zoommy 1s 3.3s;
+//  animation: zoommy 1s 3.3s;
+    @extend .animated;
+    @extend .fadeIn;
+    @include animation_delay(3.5s);
+    @include animation_duration(.5s);
 }
 
 
