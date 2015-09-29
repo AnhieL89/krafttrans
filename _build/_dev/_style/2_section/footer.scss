@@ -34,7 +34,6 @@
     float: left;
 }
 .links {
-//    border: solid 1px #ff0;
     margin-left: 105px;
     margin-top: 20px;
     width: 200px;
@@ -50,7 +49,6 @@
 
 
 .footer__list {
-//    border: solid 1px #ff0;
     display: block;
     float: left;
     width: 200px;
@@ -75,7 +73,58 @@
 
 
 
-
+.footer__right {
+    display: block;
+    position: absolute;
+    width: 500px;
+    right: 0;
+    min-height: 100px;
+}
+.partners {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("img/partners.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 445px;
+    height: 45px;
+}
+.footer__descr {
+    .txt {
+        padding-top: 60px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+.social {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.social__list {
+    
+}
+.social__item {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.social__link {
+    background-color: #587aca;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.social__icon {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1em;
+}
+.social__txt {
+    text-indent: 100px;
+}
 
 
 
