@@ -43,6 +43,9 @@ $navPoint: 20px;
     &:hover {
         border-color: #353535;
     }
+    &.active {
+
+    }
 }
 .nav__anchor {
     position: absolute;
