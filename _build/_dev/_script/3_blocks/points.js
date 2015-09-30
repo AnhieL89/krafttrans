@@ -3,9 +3,10 @@ var jQuery,
 (function ($) {
     "use strict";
 
-    var nav = $('.nav__item');
+    var nav = $('.nav__item'),
+        page__line = $('.page__line');
 
-    $('.page__line').waypoint(function(direction){
+    page__line.waypoint(function(direction){
         var selector = $(this.options.element).find('a.nav__anchor').attr('name');
         console.log(selector);
         nav.find('a').removeClass('nav__link_act');

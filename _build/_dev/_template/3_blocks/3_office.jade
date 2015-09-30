@@ -1,99 +1,92 @@
-// SVG src paths
-svg.src#svg-offices(width="0" height="0" viewbox='0 0 1000 1000')
-    defs#defs1
+#office_id
+    // SVG src paths
+    svg.src#svg-offices(width="0" height="0" viewbox='0 0 1000 1000')
+        defs#defs1
 
-        circle.circle#circle-minsk(   r='36', style='fill:#eb232a')
-        circle.circle#circle-brest(   r='11', style='fill:#818285')
-        circle.circle#circle-vilnus(  r='16', style='fill:#414142')
-        circle.circle#circle-smolensk(r='14', style='fill:#414142')
-        circle.circle#circle-moskau(  r='26', style='fill:#414142')
-        circle.circle#circle-riga(    r='12', style='fill:#818285')
-        circle.circle#circle-vena(    r='12', style='fill:#414142')
+            circle.circle#circle-minsk(   r='36', style='fill:#eb232a')
+            circle.circle#circle-brest(   r='11', style='fill:#818285')
+            circle.circle#circle-vilnus(  r='16', style='fill:#414142')
+            circle.circle#circle-smolensk(r='14', style='fill:#414142')
+            circle.circle#circle-moskau(  r='26', style='fill:#414142')
+            circle.circle#circle-riga(    r='12', style='fill:#818285')
+            circle.circle#circle-vena(    r='12', style='fill:#414142')
 
-        g#g2
-            path.path#path1(d='M 137.67664,839.91775 516.30036,517.42498', style='stroke:#aaaaaa;stroke-width:3px')
-            path.path#path2(d='M 519.05308,497.25188 416.07919,438.13123', style='stroke:#aaaaaa;stroke-width:3px')
-            path.path#path3(d='M 544.60707,495.73598 701.1576,453.2641',   style='stroke:#aaaaaa;stroke-width:3px')
-            path.path#path4(d='M 712.22217,448.51626 873.1623,394.92059',  style='stroke:#aaaaaa;stroke-width:3px')
-            path.path#path5(d='m 415.27723,433.38581 284.64965,15.79871',  style='stroke:#aaaaaa;stroke-width:3px')
-            path.path#path6(d='M 702.13546,445.68561 392.94514,318.96789', style='stroke:#aaaaaa;stroke-width:3px')
-
-
-
-
-.office__head
-    .title
-        h2.title__head
-            | СТРАТЕГИЯ СФОКУСИРОВАННОГО РОСТА
-        .title__body
-            | КРАФТТРАНС применяет стратегию сфокусированного роста. 
-            | Фокус на специализации означает, 
-            | что каждый офис открывается под нужды клиента и профессионально 
-            | развивается в определенной области перевозок.
-
-.office__body#office_id
-    .office__item.office__item_point
-        .office__point.minsk
-        .point.point_minsk
-            .point__name
-                | МЕРКУРИЙ
-            .point__city
-                | Минск
-
-        .office__point.brest
-        .point.point_brest
-            .point__city
-                | Брест
-
-        .office__point.vilnus
-        .point.point_vilnus
-            .point__name
-                | ВЕРНАЛИС
-            .point__city
-                | Вильнюс
-
-        .office__point.smolensk
-        .point.point_smolensk
-            .point__name
-                | СИРИУС
-            .point__city
-                | Смоленск
-
-        .office__point.moskau
-        .point.point_moskau
-            .point__name
-                | АТЛАС
-            .point__city
-                | Москва
-
-        .office__point.riga
-        .point.point_riga
-            .point__city
-                | Рига
-
-        .office__point.vena
-        .point.point_vena
-            .point__name
-                | ВЕНУС
-            .point__city
-                | Вена
-    
-    .office__item.office__item_path
-        svg.office__svg(viewbox="0 0 1000 1000")
-            use(xlink:href="#g2")
-
-
-
-    //.office__item.office__item_point.minsk
-        svg.office__svg(viewbox="0 0 1000 1000")
-            use(xlink:href="#circle-minsk")
+            g#g2
+                path.path#path1(d='M 137.67664,839.91775 516.30036,517.42498', style='stroke:#aaaaaa;stroke-width:3px')
+                path.path#path2(d='M 519.05308,497.25188 416.07919,438.13123', style='stroke:#aaaaaa;stroke-width:3px')
+                path.path#path3(d='M 544.60707,495.73598 701.1576,453.2641',   style='stroke:#aaaaaa;stroke-width:3px')
+                path.path#path4(d='M 712.22217,448.51626 873.1623,394.92059',  style='stroke:#aaaaaa;stroke-width:3px')
+                path.path#path5(d='m 415.27723,433.38581 284.64965,15.79871',  style='stroke:#aaaaaa;stroke-width:3px')
+                path.path#path6(d='M 702.13546,445.68561 392.94514,318.96789', style='stroke:#aaaaaa;stroke-width:3px')
 
 
 
 
+    .office__head
+        .title
+            h2.title__head
+                | СТРАТЕГИЯ
+                br
+                | СФОКУСИРОВАННОГО РОСТА
+            .title__body
+                | КРАФТТРАНС применяет стратегию сфокусированного роста.
+                | Фокус на специализации означает,
+                | что каждый офис открывается под нужды клиента и профессионально
+                | развивается в определенной области перевозок.
+
+    .office__body
+        .office__item.office__item_point
+            .office__point.minsk
+            .point.point_minsk
+                .point__name
+                    | МЕРКУРИЙ
+                .point__city
+                    | Минск
+
+            .office__point.brest
+            .point.point_brest
+                .point__city
+                    | Брест
+
+            .office__point.vilnus
+            .point.point_vilnus
+                .point__name
+                    | ВЕРНАЛИС
+                .point__city
+                    | Вильнюс
+
+            .office__point.smolensk
+            .point.point_smolensk
+                .point__name
+                    | СИРИУС
+                .point__city
+                    | Смоленск
+
+            .office__point.moskau
+            .point.point_moskau
+                .point__name
+                    | АТЛАС
+                .point__city
+                    | Москва
+
+            .office__point.riga
+            .point.point_riga
+                .point__city
+                    | Рига
+
+            .office__point.vena
+            .point.point_vena
+                .point__name
+                    | ВЕНУС
+                .point__city
+                    | Вена
+
+        .office__item.office__item_path
+            svg.office__svg(viewbox="0 0 1000 1000")
+                use(xlink:href="#g2")
 
 
 
-
-
-
+        //.office__item.office__item_point.minsk
+            svg.office__svg(viewbox="0 0 1000 1000")
+                use(xlink:href="#circle-minsk")

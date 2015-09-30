@@ -39,18 +39,30 @@
     font-family: $font_2;
     font-weight: normal;
     line-height: 1;
-    padding: 10px 0;
+    padding: 10px 0 20px 0;
 }
 .principle__list {
     display: block;
     border-top: solid 5px #c8c8c8;
     padding-top: 20px;
-    padding-left: 20px;
 }
 .principle__item {
     font-size: 18px;
     font-family: $font_4;
     padding-right: 30px;
-    list-style: disc;
-    line-height: 1.6;
+    color: black;
+    line-height: 28px;
+    padding-left: 25px;
+    position: relative;
+    &:before {
+        content: "•";
+        font-size: 46px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 24px;
+        width: 20px;
+        color: #353535;
+    }
 }
